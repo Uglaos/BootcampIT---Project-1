@@ -7,7 +7,7 @@ int main() // function
 {
 	cout << "Hello World!" << endl; // console log Hello World
 	cout << "change";
-	cout << "Buraz, novi feature je u igri!!!";
+	cout << "Change2";
 	system ("PAUSE"); // pause first and then cout
 	return 0; // return no error
 }
