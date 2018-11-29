@@ -7,15 +7,87 @@ using namespace std;
 
 int main()
 {
-	
-	int A1, A2, B1, B2;
-	cin >> A1 >> A2;
-	cin >> B1 >> B2;
-	if (B1 >)
+	int K, D, O, X;
+	cin >> K;
+	cin >> D;
+	cin >> O;
 	return 0;
 }
  
 
+/* pikado
+int N, S, K;
+	cin >> N;
+	cin >> S >> K;
+	if (N - S * K > 0) {
+		cout << "Dobro";
+	}
+	else if (N - S * K < 0) {
+		cout << "Lose";
+	}
+	else { cout << "Odlicno"; }
+*/
+/* cokolada
+int R, S, G, M, T;
+	cin >> R;
+	cin >> S;
+	cin >> G;
+	cin >> M;
+	if ((R*S*G) < M) {
+		cout << R*S*G;
+	}
+	else { cout << 0; }
+*/
+/* stanica
+	int N, K, M, T1, T2;
+	cin >> N;
+	cin >> K;
+	cin >> M;
+	T1 = K - N;
+	T2 = (K + M) - N;
+	if (T1 > 0  ) {
+		cout << "STANICA 1: " << T1 << endl;
+		cout << "STANICA 2: " << T2 << endl;
+	}
+	else if (T1 < 0) {
+		cout << "ZAKASNIT CE" << endl;
+		cout << "STANICA 2: " <<T2 << endl;
+	}
+*/
+/* ects
+int U, P;
+	cin >> U >> P;
+	if (P < 30) {
+		cout << 8400;
+	}
+	else if (P >= 30 && P < 55) {
+		cout << (U - P) * 140;
+	}
+	else if (P >= 55) {
+		cout << 0;
+	}
+	else { cout << "padas godinu frende"; }
+*/
+/* klizanje
+int N, M, A, B;
+	cin >> N >> M;
+	cin >> A >> B;
+	if (N + M >= A + B) {
+		cout << A + B;
+	}
+	else { cout << N + M; }
+*/
+/* planovi
+int A1, A2, B1, B2;
+	cin >> A1 >> A2;
+	cin >> B1 >> B2;
+	if (B1 >= A1 && B1 <= A2) {
+		 cout << B2;
+	}
+	else {
+		cout << B1;
+	}
+*/
 /* app
 int AO, BO, AC1, AC2, BC1, BC2;
 	cin >> AO >> BO;
