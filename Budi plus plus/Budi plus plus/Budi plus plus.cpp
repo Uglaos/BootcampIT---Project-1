@@ -3,19 +3,285 @@
 
 #include "pch.h"
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-	int K, D, O, X;
-	cin >> K;
-	cin >> D;
-	cin >> O;
+	int N, Bi;
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		cin >> Bi;
+	}
 	return 0;
-}
- 
 
-/* pikado
+}
+
+
+/*--------------------------PARNI
+int N;
+	cin >> N;
+
+	for (int i = 1; i <= N; i++) {
+		if (i % 2 == 0) {
+			cout << i << endl;
+		}
+	}
+*/
+/*-----------------------------OBRNUTO
+int n;
+	cin >> n;
+
+	for (int i = n; i >= 1; i--) {
+		cout << i << endl;
+	}
+*/
+/*--------------------------VEKTORI 2????????????????????
+vector<int> vektor;
+	int N;
+
+	do {
+		cin >> N;
+		if (N > 100) {
+			vektor.push_back(N);
+		}
+		else {
+			vektor.insert(vektor.begin(), N);
+		}
+	} while (N != 0);
+*/
+/* -----------------------VEKTORI 1
+int N, zbroj = 0;
+	vector<int> pribrojnici;
+
+	do {
+		cout << "Unesi broj: ";
+		cin >> N;
+		zbroj += N;
+		pribrojnici.push_back(zbroj);
+	} while (N != 0);
+
+	for (int i = 0; i < pribrojnici.size(); i++) {
+		cout << pribrojnici[i] << endl;
+	}
+*/
+/* --------------prvih N
+int N;
+	cin >> N;
+	for (int i = 1; i <= N; i++) {
+		cout << i;
+		cout << endl;
+
+	}
+*/
+/*---------------------------------KRIZIC KRUZIC MOJA VERZIJA
+char polje[9] = { '1','2','3','4','5','6','7','8','9' };
+
+	cout << "------------Krizic Kruzic-----------" << endl;
+	cout << "************************************" << endl;
+	cout << "--Prvi igrac je x, drugi igrac je o--" << endl << endl;
+
+	cout << "     |     |     " << endl;
+	cout << "  " << polje[0] << "  |  " << polje[1] << "  |  " << polje[2] << endl;
+	cout << "_____|_____|_____" << endl;
+	cout << "     |     |     " << endl;
+	cout << "  " << polje[3] << "  |  " << polje[4] << "  |  " << polje[5] << endl;
+	cout << "_____|_____|_____" << endl;
+	cout << "     |     |     " << endl;
+	cout << "  " << polje[6] << "  |  " << polje[7] << "  |  " << polje[8] << endl;
+	cout << "     |     |     " << endl;
+
+	for (int j = 0; j < 9; j++) {
+		int x;
+		cout << "Unesi poziciju za x ili o: ";
+		cin >> x;
+
+		if (j % 2 == 0) {
+			if (polje[x - 1] != 'x' && polje[x - 1] != 'o') {
+				polje[x - 1] = 'x';
+			}
+			else {
+				cout << "Polje zauzeto, unesi drugu poziciju: ";
+				j--;
+				continue;
+			}
+		}
+		else if (j % 2 != 0) {
+			if (polje[x - 1] != 'x' && polje[x - 1] != 'o') {
+				polje[x - 1] = 'o';
+			}
+			else {
+				cout << "Polje zauzeto, unesi drugu poziciju: ";
+				j--;
+				cin >> x;
+				polje[x - 1];
+			}
+		}
+
+		system("cls");
+
+		cout << "------------Krizic Kruzic-----------" << endl;
+		cout << "************************************" << endl;
+		cout << "--Prvi igrac je x, drugi igrac je o--" << endl << endl;
+
+		cout << "     |     |     " << endl;
+		cout << "  " << polje[0] << "  |  " << polje[1] << "  |  " << polje[2] << endl;
+		cout << "_____|_____|_____" << endl;
+		cout << "     |     |     " << endl;
+		cout << "  " << polje[3] << "  |  " << polje[4] << "  |  " << polje[5] << endl;
+		cout << "_____|_____|_____" << endl;
+		cout << "     |     |     " << endl;
+		cout << "  " << polje[6] << "  |  " << polje[7] << "  |  " << polje[8] << endl;
+		cout << "     |     |     " << endl;
+
+		if (j > 3) {
+
+			if (polje[0] == 'x' && polje[1] == 'x' && polje[2] == 'x' || polje[3] == 'x' && polje[4] == 'x' && polje[5] == 'x' || polje[6] == 'x' && polje[7] == 'x' && polje[8] == 'x' || polje[0] == 'x' && polje[3] == 'x' && polje[6] == 'x' || polje[1] == 'x' && polje[4] == 'x' && polje[7] == 'x' || polje[2] == 'x' && polje[5] == 'x' && polje[8] == 'x' || polje[0] == 'x' && polje[4] == 'x' && polje[8] == 'x' || polje[2] == 'x' && polje[4] == 'x' && polje[6] == 'x') {
+				cout << "Igrac x je pobjednik" << endl;
+				break;
+			}
+			else if (polje[0] == 'o' && polje[1] == 'o' && polje[2] == 'o' || polje[3] == 'o' && polje[4] == 'o' && polje[5] == 'o' || polje[6] == 'o' && polje[7] == 'o' && polje[8] == 'o' || polje[0] == 'o' && polje[3] == 'o' && polje[6] == 'o' || polje[1] == 'o' && polje[4] == 'o' && polje[7] == 'o' || polje[2] == 'o' && polje[5] == 'o' && polje[8] == 'o' || polje[0] == 'o' && polje[4] == 'o' && polje[8] == 'o' || polje[2] == 'o' && polje[4] == 'o' && polje[6] == 'o') {
+				cout << "Igrac o je pobjednik" << endl;
+				break;
+			}
+		}
+	}
+
+*/
+/* ------------------------------------krizic kruzic
+char polje[9] = { '1','2','3','4','5','6','7','8','9' };
+for (int i = 1; i <= 9; i++) {
+		if (i % 3 != 0) {
+			cout << polje[i - 1] << "\t";
+		}
+		else {
+			cout << polje[i - 1] << endl;
+		}
+	}
+
+
+
+	for (int j = 0; j < 9; j++) {
+
+		int x;
+		cout << "Unesi poziciju: ";
+		cin >> x;
+
+		if (j % 2 == 0) {
+			polje[x - 1] = 'x';
+		}
+		else {
+			polje[x - 1] = 'o';
+		}
+		system("cls");
+		for (int i = 1; i <= 9; i++) {
+			if (i % 3 != 0) {
+				cout << polje[i - 1] << "\t";
+			}
+			else {
+				cout << polje[i - 1] << endl;
+			}
+
+		}
+		if (j > 3) {
+
+			if (polje[0] == 'x' && polje[1] == 'x' && polje[2] == 'x' || polje[3] == 'x' && polje[4] == 'x' && polje[5] == 'x' || polje[6] == 'x' && polje[7] == 'x' && polje[8] == 'x' || polje[0] == 'x' && polje[3] == 'x' && polje[6] == 'x' || polje[1] == 'x' && polje[4] == 'x' && polje[7] == 'x' || polje[2] == 'x' && polje[5] == 'x' && polje[8] == 'x' || polje[0] == 'x' && polje[4] == 'x' && polje[8] == 'x' || polje[2] == 'x' && polje[4] == 'x' && polje[6] == 'x') {
+				cout << "Igrac x je pobjednik" << endl;
+				break;
+			}
+			else if (polje[0] == 'o' && polje[1] == 'o' && polje[2] == 'o' || polje[3] == 'o' && polje[4] == 'o' && polje[5] == 'o' || polje[6] == 'o' && polje[7] == 'o' && polje[8] == 'o' || polje[0] == 'o' && polje[3] == 'o' && polje[6] == 'o' || polje[1] == 'o' && polje[4] == 'o' && polje[7] == 'o' || polje[2] == 'o' && polje[5] == 'o' && polje[8] == 'o' || polje[0] == 'o' && polje[4] == 'o' && polje[8] == 'o' || polje[2] == 'o' && polje[4] == 'o' && polje[6] == 'o') {
+				cout << "Igrac o je pobjednik" << endl;
+				break;
+			}
+		}
+	}
+
+*/
+/* ---------------zadatak 1 polja
+int N[10];
+	int zbroj = 0;
+	int i;
+	float prosjek;
+	for (i = 0; i < 10; i++) {
+		cin >> N[i];
+		zbroj += N[i];
+	}
+	prosjek = float(zbroj) / i;
+	cout << setprecision(2) << fixed << prosjek;
+*/
+/* -----------------------prosti
+int N, i;
+	bool prost = true;
+	cout << "unesi broj: ";
+	cin >> N;
+	for (i = 2; i < sqrt(N); i++) {
+		if (N % i == 0) {
+			prost = false;
+			break;
+		}
+	} if (prost) {
+		cout << "prost";
+	}
+	else { cout << "nije prost"; }
+*/
+ /* ------------------umnozak niza
+int N, j;
+int sum = 1;
+cin >> N;
+for (int i = 0; i < N; i++) {
+	cin >> j;
+	sum *= j;
+} cout << sum;
+}
+*/
+/* ---------------prosjek ocjena
+int unos;
+	int zbroj = 0;
+	int counter = 0;
+	float prosjek;
+	do {
+		cin >> unos;
+		zbroj += unos;
+		counter++;
+	} while (unos != 0);
+	prosjek = float(zbroj) / (counter-1);
+	cout << setprecision(2) << fixed << prosjek << endl;
+	return 0;
+*/
+/* --------------suma niza
+int N, j, sum;
+	sum = 0;
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		cin >> j;
+		sum += j;
+	}cout << sum;
+*/
+/* -------------MELKIOR
+int O1, O2, O3, O4, O5, z;
+	cin >> O1 >> O2 >> O3 >> O4 >> O5;
+	float p;
+	z = O1 + (O2 * 2) + (O3 * 3) + (O4 * 4) + (O5 * 5);
+	p = float(z) / (O1 + O2 + O3 + O4 + O5);
+	if (O1 > 0) {
+		cout << "nedovoljan";
+	}
+	else if (p >= 2.00 && p < 2.50) {
+		cout << setprecision(2) << fixed << p << endl;
+		cout << "dovoljan";
+	}
+	else if (p >= 2.50 && p < 3.50) {
+		cout << setprecision(2) << fixed << p << endl;
+		cout << "dobar";
+	}
+	else if (p >= 3.50 && p < 4.50) {
+		cout << setprecision(2) << fixed << p << endl;
+		cout << "vrlo dobar";
+	}
+	else if (p >= 4.50 && p <= 5.00) {
+		cout << setprecision(2) << fixed << p << endl;
+	}
+/* ------------pikado
 int N, S, K;
 	cin >> N;
 	cin >> S >> K;
