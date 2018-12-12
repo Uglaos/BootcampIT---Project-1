@@ -1,0 +1,8 @@
+﻿  Studenti.cpp
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(36): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(43): error C2360: initialization of 'podaci' is skipped by 'case' label
+  c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(30): note: see declaration of 'podaci'
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(43): error C2360: initialization of 'line' is skipped by 'case' label
+  c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(29): note: see declaration of 'line'
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(43): error C2360: initialization of 'input' is skipped by 'case' label
+  c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\studenti\studenti\studenti.cpp(27): note: see declaration of 'input'

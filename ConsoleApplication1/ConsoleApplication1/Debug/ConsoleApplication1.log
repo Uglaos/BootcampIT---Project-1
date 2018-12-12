@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  ConsoleApplication1.cpp
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\consoleapplication1\consoleapplication1\consoleapplication1.cpp(14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ConsoleApplication1.vcxproj -> C:\Users\UC-M01\Documents\Alen Uglik\BootcampIT---Project-1\ConsoleApplication1\Debug\ConsoleApplication1.exe

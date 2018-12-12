@@ -1,0 +1,6 @@
+﻿  Klobuk.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\tgmath.h(27): warning UCRT4000: The Universal CRT implementation of tgmath.h does not conform to the C99 standard. Functionality equivalent to the type-generic functions provided by tgmath.h is available in <ctgmath> when compiling as C++. If compiling in C++17 mode or higher (/std:c++17), this header will automatically include <ctgmath> instead. You can define _CRT_SILENCE_NONCONFORMING_TGMATH_H to acknowledge that you have received this warning.
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\klobuk\klobuk\klobuk.cpp(18): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\klobuk\klobuk\klobuk.cpp(23): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\klobuk\klobuk\klobuk.cpp(13): warning C4101: 'Y': unreferenced local variable
+  Klobuk.vcxproj -> C:\Users\UC-M01\Documents\Alen Uglik\BootcampIT---Project-1\Klobuk\Debug\Klobuk.exe

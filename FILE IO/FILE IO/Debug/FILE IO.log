@@ -1,0 +1,4 @@
+﻿  FILE IO.cpp
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\file io\file io\file io.cpp(47): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\file io\file io\file io.cpp(98): warning C4018: '<': signed/unsigned mismatch
+  FILE IO.vcxproj -> C:\Users\UC-M01\Documents\Alen Uglik\BootcampIT---Project-1\FILE IO\Debug\FILE IO.exe

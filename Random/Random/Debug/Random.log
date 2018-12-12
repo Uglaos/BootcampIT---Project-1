@@ -1,0 +1,3 @@
+﻿  Random.cpp
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\random\random\random.cpp(13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Random.vcxproj -> C:\Users\UC-M01\Documents\Alen Uglik\BootcampIT---Project-1\Random\Debug\Random.exe

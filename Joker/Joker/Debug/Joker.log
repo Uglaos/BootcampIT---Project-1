@@ -1,0 +1,4 @@
+﻿  Joker.cpp
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\joker\joker\joker.cpp(22): error C2440: '=': cannot convert from 'int [6]' to 'int'
+  c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\joker\joker\joker.cpp(22): note: There is no context in which this conversion is possible
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\joker\joker\joker.cpp(30): error C2109: subscript requires array or pointer type

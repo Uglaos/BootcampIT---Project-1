@@ -9,21 +9,25 @@ using namespace std;
 
 int main()
 {
-	int AG, BG, N, znak;
+	int AG, BG, N, Abod = 0, Bbod = 0;
 
-	cin >> AG >> BG;
+	cin >> AG;
+	cin >> BG;
 	cin >> N;
-	vector<char> znakovi;
+	char znak;
+	
 
 	for (int i = 0; i < N; i++) {
 		cin >> znak;
-		znakovi.push_back(znak);
+		if (znak == 'A') {
+			Abod++;
+		}
+		else if (znak == 'B') {
+			Bbod++;
+		}
 	}
 
-	if (znakovi.size() < 3) {
-
-	}
-
+	cout << 
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
