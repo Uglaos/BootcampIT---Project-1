@@ -5,10 +5,14 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 void menu();
 void unos();
+void ispis();
+void BubbleSort(vector<string> lista);
+void ispis_po_imenu();
 
 int main()
 {
@@ -21,6 +25,13 @@ int main()
 		case 1: system("cls");
 				unos();
 				break;
+		case 2: system("cls");
+				ispis();
+				break;
+		case 3: system("cls");
+				ispis_po_imenu();
+				break;
+
 		default: break;
 		}
 
@@ -38,22 +49,84 @@ void menu() {
 }
 
 void unos() {
-	string student[2], za_spremanje;
+	string ime, prezime, za_spremanje;
 	float prosjek;
 	cout << "\n\n\tUnesi ime: ";
-	cin >> student[0];
+	cin >> ime;
 	cout << "\n\n\tUnesi prezime: ";
-	cin >> student[1];
+	cin >> prezime;
 	cout << "\n\n\tUnesi prosjek: ";
 	cin >> prosjek;
 	cin.ignore();
 
-	za_spremanje = "\n" + student[0] + " " + student[1] + " " + to_string(prosjek);
+	za_spremanje = "\n" + ime + " " + prezime + " " + to_string(prosjek);
 	
 	ofstream output;
 	output.open("student.txt", ios::out | ios::app);
 	output << za_spremanje;
 	output.close();
+}
+
+void ispis() {
+	string line;
+	vector <string> student;
+	ifstream input;
+	input.open("student.txt", ios::in | ios::app);
+	while (input) {
+		getline(input, line);
+		student.push_back(line);
+	}
+	input.close();
+	for (int i = 0; i < student.size() - 1; i++)
+	{
+		cout << student[i] << endl;
+	}
+	system("pause");
+}
+
+void ispis_po_imenu() {
+
+	vector<string> ime;
+	vector<string> prezime;
+	vector<float> prosjek;
+	string i, p;
+	float pr;
+
+	ifstream input;
+	input.open("student.txt", ios::in);
+	while (input) {
+		input >> i >> p >> pr;
+		ime.push_back(i);
+		prezime.push_back(p);
+		prosjek.push_back(pr);
+	}
+
+	BubbleSort(ime);
+
+	for (int i = 0; i < ime.size(); i++)
+	{
+		cout << ime[i] << " ";
+	}
+
+	system("pause");
+}
+
+void BubbleSort(vector<string> lista) {
+	string temp;
+	int j;
+	bool bilaZamjena = true;
+
+	for (int i = 0; bilaZamjena == true; i++) {
+		bilaZamjena = false;
+		for (j = 0; j < lista.size() - 1 - i; j++) {
+			if (lista[j] > lista[j + 1]) {
+				temp = lista[j];
+				lista[j] = lista[j + 1];
+				lista[j + 1] = temp;
+				bilaZamjena = true;
+			}
+		}
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
