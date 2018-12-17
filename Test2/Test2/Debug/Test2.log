@@ -1,0 +1,8 @@
+﻿  Test2.cpp
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\test2\test2\test2.cpp(102): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\test2\test2\test2.cpp(140): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\test2\test2\test2.cpp(148): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\test2\test2\test2.cpp(179): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\test2\test2\test2.cpp(182): warning C4018: '<': signed/unsigned mismatch
+c:\users\uc-m01\documents\alen uglik\bootcampit---project-1\test2\test2\test2.cpp(230): warning C4018: '<': signed/unsigned mismatch
+  Test2.vcxproj -> C:\Users\UC-M01\Documents\Alen Uglik\BootcampIT---Project-1\Test2\Debug\Test2.exe

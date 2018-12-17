@@ -1,0 +1,14 @@
+
+25 Alen Uglik 3 Lekadol Aspirin Xanax 
+2 Ivan Peric 4 Andol Piozin Pajazin PAjdo 
+1 Ante Pavlovic 2 Kodein Biopazein 
+25 Alen Uglik 3 Lekadol Aspirin Xanax 
+2 Ivan Peric 4 Lekadol Aspirin Xanax Andol Piozin Pajazin PAjdo 
+
+25 Alen Uglik 3 Lekadol Aspirin Xanax 
+2 Ivan Peric 4 Lekadol Aspirin Xanax Andol Piozin Pajazin PAjdo 
+1 Ante Pavlovic 2 Lekadol Aspirin Xanax Andol Piozin Pajazin PAjdo Kodein Biopazein 
+25 Alen Uglik 3 Lekadol Aspirin Xanax Andol Piozin Pajazin PAjdo Kodein Biopazein Lekadol Aspirin Xanax 
+2 Ivan Peric 4 Lekadol Aspirin Xanax Andol Piozin Pajazin PAjdo Kodein Biopazein Lekadol Aspirin Xanax Lekadol Aspirin Xanax Andol 
+0 Ivan Peric 4 Lekadol Aspirin Xanax Andol Piozin Pajazin PAjdo Kodein Biopazein Lekadol Aspirin Xanax Lekadol Aspirin Xanax Andol Andol Andol Andol Andol 
+41 Domagoj Peric 3 Lijek1 Lijek2 Lijek3 
